@@ -6,8 +6,15 @@
     <title>JavaScript</title>
 </head>
 <body>
+    <button id="clickIt">Click here</button>
     <div id="div-id-1">Text strony</div>
     <p id="demo"></p>
+    <div>
+        Liczba 1 <input type="text" id="liczba1"><br><br>
+        Liczba 2 <input type="text" id="liczba2"><br><br>
+        <button id="dodaj">DODAJ EventListener</button>
+        <p id="wynik"></p>
+    </div>
     <script>
         // alert("Hello world");
         // prompt("jak masz na imie")
@@ -58,7 +65,7 @@
         document.write("Wynik dzielenia: ", firstNum / secondNum, "<br>");
         document.write("Wynik mnożenia: ", firstNum * secondNum, "<br>");
 
-        //function
+        //function +
         function summ(a,b){
             return a+ b;
         }
@@ -71,7 +78,14 @@
             document.getElementById("demo").innerHTML += "We clicked!<br>";
         }
 
-        document.addEventListener("click", myFunction);
+        document.addEventListener("click", myFunction)
+        //onclick="dodaj()"
+        function dodaj() {
+            let liczba1=parseInt(document.getElementById("liczba1").value;
+            let liczba2=parseInt(document.getElementById("liczba2").value;
+            let wynikSum=liczba1+liczba2;
+            document.getElementById("wynik").innerHTML=wynikSum;
+        } 
 
 
 
