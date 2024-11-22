@@ -23,8 +23,8 @@
         document.write("I am function write in DOM");
         document.write("<h4>I am function write in DOM</h4>")
         //my function 
-        function myWrite(attribute){
-            document.write(attribute)
+        function myWrite(myAttribute){
+            document.write(myAttribute)
         }
         myWrite("<h1 class='element-h1'>Hello</h1>");
         myWrite("<br>");
@@ -40,7 +40,6 @@
         let num = 1.45;
         let str = "string";
         let bool = true;
-
         const pi = 3.14;
 
         console.log(num);
@@ -86,10 +85,15 @@
             let wynikSum=liczba1+liczba2;
             document.getElementById("wynik").innerHTML=wynikSum;
         } 
-
-
-
-
+        //addEventListener("click", dodajEventListener)
+        function dodajEventListener(){
+            let liczba1=parseInt(document.getElementById("liczba1").value;
+            let liczba2=parseInt(document.getElementById("liczba2").value;
+            let wynikSum=liczba1+liczba2;
+            document.getElementById("wynik").innerHTML=wynikSum;
+        } 
+        
+        document.getElementById("dodaj") .addEventListener("click", dodajEventListener)
     </script>
 </body>
 </html>
